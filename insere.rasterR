@@ -1,0 +1,17 @@
+library(raster)
+
+caminho <- "D:/srgml/OneDrive/Desktop/PROJETO OURO PRETO/Dados de Entrada/"
+dir_output <- "C:/Users/srgml/Pictures/Rasters/Plots/"
+
+rasters <- c("MDE.tif", "DCL.tif", "HIP.tif", "SOB.tif", "EXT.tif", "USO.tif", "ERO.tif", "VUL.tif", "LIT.tif", "SOL.tif")
+
+if (!dir.exists(dir_output)) {
+  dir.create(dir_output)
+}
+
+for (raster_nome in rasters) {
+  raster <- raster(paste0(caminho, raster_nome))
+  png(filename = paste0(dir_output, tools::file_path_sans_ext(raster_nome), "_plot.png"))
+  plot(raster, main = tools::file_path_sans_ext(raster_nome))
+  dev.off()
+}
