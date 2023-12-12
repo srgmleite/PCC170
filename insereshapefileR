@@ -1,0 +1,45 @@
+library(sf)
+
+caminho_shp <- "D:/srgml/OneDrive/Desktop/PROJETO OURO PRETO/Dados de Entrada/"
+dir_output_shp <- "C:/Users/srgml/Pictures/Shapefiles/Plots/"
+
+shapefiles <- c("SRI.shp", "DRE.shp", "AIN.shp", "CUN.shp", "POC.shp", "URB.shp")
+nomes_variaveis <- c("SRI", "DRE", "AIN", "CUN", "POC", "URB")
+
+if (!dir.exists(dir_output_shp)) {
+  dir.create(dir_output_shp, recursive = TRUE)
+}
+
+for (i in seq_along(shapefiles)) {
+  shape <- st_read(paste0(caminho_shp, shapefiles[i]))
+  
+  for (atributo in names(shape)) {
+    if (is.numeric(shape[[atributo]])) {
+      png(filename = paste0(dir_output_shp, nomes_variaveis[i], "_", atributo, "_plot.png"))
+      plot(shape[[atributo]], col = rainbow(100), main = paste(nomes_variaveis[i], "-", atributo), 
+           xlab = "Observações", ylab = "Valores")
+      dev.off()
+    }
+  }
+}
+library(sf)
+
+caminho_shp <- "D:/srgml/OneDrive/Desktop/PROJETO OURO PRETO/Dados de Entrada/"
+dir_output_shp <- "C:/Users/srgml/Pictures/Shapefiles/Plots/"
+
+shapefiles <- c("SRI.shp", "DRE.shp", "AIN.shp", "CUN.shp", "POC.shp", "URB.shp")
+nomes_variaveis <- c("SRI", "DRE", "AIN", "CUN", "POC", "URB")
+
+if (!dir.exists(dir_output_shp)) {
+  dir.create(dir_output_shp, recursive = TRUE)
+}
+
+for (i in seq_along(shapefiles)) {
+  shape <- st_read(paste0(caminho_shp, shapefiles[i]))
+  
+  for (atributo in names(shape)) {
+    png(filename = paste0(dir_output_shp, nomes_variaveis[i], "_", atributo, "_plot.png"))
+    plot(shape[atributo], main = paste(nomes_variaveis[i], "-", atributo))
+    dev.off()
+  }
+}
