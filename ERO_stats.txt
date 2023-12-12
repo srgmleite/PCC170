@@ -1,0 +1,6 @@
+Estatísticas do raster ERO :
+Valor Máximo: 6 
+Valor Mínimo: 1 
+Média: NA 
+Desvio Padrão: NA 
+

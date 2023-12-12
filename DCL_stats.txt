@@ -1,0 +1,6 @@
+Estatísticas do raster DCL :
+Valor Máximo: 61.28313 
+Valor Mínimo: 0 
+Média: NA 
+Desvio Padrão: NA 
+
