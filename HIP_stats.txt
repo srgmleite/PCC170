@@ -1,0 +1,6 @@
+Estatísticas do raster HIP :
+Valor Máximo: 1560 
+Valor Mínimo: 930 
+Média: NA 
+Desvio Padrão: NA 
+

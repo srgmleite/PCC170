@@ -1,0 +1,6 @@
+Estatísticas do raster VUL :
+Valor Máximo: 6 
+Valor Mínimo: 1 
+Média: NA 
+Desvio Padrão: NA 
+

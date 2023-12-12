@@ -1,0 +1,6 @@
+Estatísticas do raster EXT :
+Valor Máximo: 255 
+Valor Mínimo: 0 
+Média: NA 
+Desvio Padrão: NA 
+

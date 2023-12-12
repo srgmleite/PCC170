@@ -1,0 +1,6 @@
+Estatísticas do raster MDE :
+Valor Máximo: 1580 
+Valor Mínimo: 924 
+Média: NA 
+Desvio Padrão: NA 
+

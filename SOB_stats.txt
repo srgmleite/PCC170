@@ -1,0 +1,6 @@
+Estatísticas do raster SOB :
+Valor Máximo: 1.491211 
+Valor Mínimo: 0.009293221 
+Média: NA 
+Desvio Padrão: NA 
+

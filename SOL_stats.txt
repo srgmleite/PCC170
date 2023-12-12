@@ -1,0 +1,6 @@
+Estatísticas do raster SOL :
+Valor Máximo: 3 
+Valor Mínimo: 1 
+Média: NA 
+Desvio Padrão: NA 
+
