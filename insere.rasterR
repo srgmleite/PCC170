@@ -16,7 +16,7 @@ sink(file = paste(dir_output, nome, "_stats.txt", sep = ""))
   cat("Desvio Padrão:", sd_val, "\n\n")
   sink()  # Fechar o arquivo de saída
   
-  # Salvar o histograma do raster como imagem PNG
+ 
   png(file = paste(dir_output, nome, "_histogram.png", sep = ""))
   hist(as.vector(values(raster)), main = paste("Histograma dos Valores do Raster", nome))
   dev.off()
