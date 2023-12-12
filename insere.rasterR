@@ -8,7 +8,19 @@ rasters <- c("MDE.tif", "DCL.tif", "HIP.tif", "SOB.tif", "EXT.tif", "USO.tif", "
 if (!dir.exists(dir_output)) {
   dir.create(dir_output)
 }
-
+sink(file = paste(dir_output, nome, "_stats.txt", sep = ""))
+  cat("Estatísticas do raster", nome, ":\n")
+  cat("Valor Máximo:", max_val, "\n")
+  cat("Valor Mínimo:", min_val, "\n")
+  cat("Média:", mean_val, "\n")
+  cat("Desvio Padrão:", sd_val, "\n\n")
+  sink()  # Fechar o arquivo de saída
+  
+  # Salvar o histograma do raster como imagem PNG
+  png(file = paste(dir_output, nome, "_histogram.png", sep = ""))
+  hist(as.vector(values(raster)), main = paste("Histograma dos Valores do Raster", nome))
+  dev.off()
+  
 for (raster_nome in rasters) {
   raster <- raster(paste0(caminho, raster_nome))
   png(filename = paste0(dir_output, tools::file_path_sans_ext(raster_nome), "_plot.png"))
