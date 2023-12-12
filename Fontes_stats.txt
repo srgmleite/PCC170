@@ -1,0 +1,6 @@
+Estatísticas do raster Fontes :
+Valor Máximo: 4 
+Valor Mínimo: 1 
+Média: 2.49364 
+Desvio Padrão: 0.9277524 
+

@@ -1,0 +1,6 @@
+Estatísticas do raster Sobreira_et_al_ :
+Valor Máximo: 4 
+Valor Mínimo: 1 
+Média: 2.106582 
+Desvio Padrão: 0.9215431 
+

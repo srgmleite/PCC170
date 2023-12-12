@@ -1,0 +1,6 @@
+Estatísticas do raster Xavier :
+Valor Máximo: 3 
+Valor Mínimo: 1 
+Média: 1.592135 
+Desvio Padrão: 0.7679003 
+

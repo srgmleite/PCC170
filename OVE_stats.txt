@@ -1,0 +1,6 @@
+Estatísticas do raster OVE :
+Valor Máximo: 359.4543 
+Valor Mínimo: -1 
+Média: 170.7466 
+Desvio Padrão: 89.87456 
+

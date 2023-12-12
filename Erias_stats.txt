@@ -1,0 +1,6 @@
+Estatísticas do raster Erias :
+Valor Máximo: 3 
+Valor Mínimo: 1 
+Média: 2.356222 
+Desvio Padrão: 0.8457662 
+
